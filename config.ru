@@ -1,4 +1,5 @@
 require './config/environment'
+require 'pry'
 
 use Rack::MethodOverride
 
