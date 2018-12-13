@@ -2,15 +2,15 @@
   <div> <h2> Ingredients: </h2> <%= @recipe.ingredients%> </div>
   <div> <h2> Cook Time: </h2> <%= @recipe.cook_time %> </div> <br><br>
 
-<%# <form action="/recipes/<%= @recipe.id %>/edit" method="get">
+<form action="/recipes/<%= @recipe.id %>/edit" method="get">
   <input type="submit" value="Edit a book">
-</form> %>
+</form>
 
 <form action="/recipes/<%= @recipe.id %>" method="post">
   <input type="hidden" name="_method" value="delete">
   <input type="submit" value="delete">
 </form>
 
-<!-- <form action="/recipes" method="get">
+<form action="/recipes" method="get">
   <input type="submit" value="Go to main page">
-</form> -->
+</form>
